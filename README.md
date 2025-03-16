@@ -35,7 +35,7 @@
 
 - Create IAM User on AWS and give it access to read and write to S3, You will need the `AWS access key` and `AWS secret key` for this IAM user while running the notebook.
 - Create a bucket in your S3 account.
-- Go to the project path, open the notebook, edit the 2nd cell with the relevant information.
+- Go to the project path, open the notebook `explore.ipynb`, edit the 2nd cell with the relevant information.
 - The load part is still incomplete, as it heavily depends on the target database provider and what engine is needed to communicate with it. I left a code example which I thought was enough to deliver the idea while saving time.
 
 ## How the scripts would be scheduled and run on AWS
