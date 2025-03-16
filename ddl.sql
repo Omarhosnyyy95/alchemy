@@ -38,7 +38,7 @@ CREATE TABLE [product] (
   [grade] Type
 );
 
-CREATE TABLE [country] (
+CREATE TABLE [sales] (
   [serial] int,
   [bin_id] int,
   [sales_order] int,
@@ -52,25 +52,25 @@ CREATE TABLE [country] (
   [cost_currency] int,
   [country_id] int,
   [product_id (sku)] int,
-  CONSTRAINT [FK_country.date_key (sales_date)]
+  CONSTRAINT [FK_sales.date_key (sales_date)]
     FOREIGN KEY ([date_key (sales_date)])
       REFERENCES [date_lookup]([date_key(date)]),
-  CONSTRAINT [FK_country.customer_id]
+  CONSTRAINT [FK_sales.customer_id]
     FOREIGN KEY ([customer_id])
       REFERENCES [customers]([id]),
-  CONSTRAINT [FK_country.country_id]
+  CONSTRAINT [FK_sales.country_id]
     FOREIGN KEY ([country_id])
       REFERENCES [country]([id]),
-  CONSTRAINT [FK_country.product_id (sku)]
+  CONSTRAINT [FK_sales.product_id (sku)]
     FOREIGN KEY ([product_id (sku)])
       REFERENCES [product]([product_id]),
-  CONSTRAINT [FK_country.status_id]
+  CONSTRAINT [FK_sales.status_id]
     FOREIGN KEY ([status_id])
       REFERENCES [order_status]([id]),
-  CONSTRAINT [FK_country.cost_currency]
+  CONSTRAINT [FK_sales.cost_currency]
     FOREIGN KEY ([cost_currency])
       REFERENCES [currency]([id]),
-  CONSTRAINT [FK_country.sold_currency]
+  CONSTRAINT [FK_sales.sold_currency]
     FOREIGN KEY ([sold_currency])
       REFERENCES [currency]([id])
 );
