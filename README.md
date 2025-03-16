@@ -16,7 +16,7 @@
   - costs.csv
     - costs
   - FX_Table.csv
-    - currency_converter --> cleaned and reshaped
+    - currency_converter
   - Customer_Table.csv
     - customers
   - Country_Table.csv
