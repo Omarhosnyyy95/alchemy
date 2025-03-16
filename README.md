@@ -21,7 +21,7 @@
     - customers
   - Country_Table.csv
     - country
-  - data_lookup (created in pandas)
+  - date_lookup (created in pandas)
 - pandas was used for data manipulation to speed up setup time.
 - hash function in python was used for data surrogation which is not the best option. The best practice is to store natural keys and surrogate keys in a separate schema in the DWH.
 
