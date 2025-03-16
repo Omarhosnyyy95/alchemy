@@ -10,8 +10,8 @@ CREATE TABLE [order_status] (
 
 CREATE TABLE [date_lookup] (
   [day] date,
-  [first_day_of_month] bool,
-  [first_day_of_week] bool,
+  [first_day_of_month] date,
+  [first_day_of_week] date,
   [date_key(date)] int
 );
 
