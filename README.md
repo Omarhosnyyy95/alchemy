@@ -41,10 +41,11 @@
 - The load part is still incomplete, as it heavily depends on the target database provider and what engine is needed to communicate with it. I left a code example which I thought was enough to deliver the idea while saving time.
 
 ## How the scripts would be scheduled and run on AWS
-- Whatever the option, it's preferable to use an orchestrator like Airflow or Nifii to schedule running our jobs and take care of tasks dependencies.
+- It's preferable to use an orchestrator like Airflow or Nifii to schedule running our jobs and take care of tasks dependencies.
 - Most importantly is to save the raw data in S3 (staging layer). So we will need a pipeline(DAG) for that.
-- We will need another dag to do the following. 
+- We will need another DAG to do the following. 
   - read raw data from S3
   - create surrogate keys from the specified columns (data modeling decision)
   - data transformation
   - and loading
+- the 2 DAGs could be encapsulated in one DAG. 
