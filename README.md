@@ -38,7 +38,7 @@
 - Create IAM User on AWS and give it access to read and write to S3, You will need the `AWS access key` and `AWS secret key` for this IAM user while running the notebook.
 - Create a bucket in your S3 account.
 - Go to the project path, open the notebook, edit the 2nd cell with the relevant information.
-- The load part is still not complete, but should be the most straight forward part after transforming the datasets to match the final data model.
+- The load part is still incomplete, but should be the most straight forward part after transforming the datasets to match the final data model.
 
 ## How the scripts would be scheduled and run on AWS
 - Whatever the option, it's preferable to use an orchestrator like Airflow or Nifii to schedule running our jobs and take care of tasks dependencies.
