@@ -1,5 +1,3 @@
-# Alchemy
-
 ## Data Model
 ![Data Model](model.png)
 
