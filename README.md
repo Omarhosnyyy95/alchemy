@@ -48,4 +48,4 @@
   - create surrogate keys from the specified columns (data modeling decision)
   - data transformation
   - and loading
-- the 2 DAGs could be encapsulated in one DAG. 
+- the 2 DAGs could be encapsulated into one DAG. 
